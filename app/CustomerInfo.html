@@ -1,0 +1,155 @@
+---
+title: 
+layout: ./app/layout-customer.ejs
+engine: ejs
+current: customerInfo
+---
+
+<!-- 麵包屑 -->
+<div class="row">
+  <div class="col">
+    <nav aria-label="breadcrumb" class="customerInfocrumb d-none d-md-block mt-4">
+      <ol class="customerInfocrumb breadcrumb bg-transparent pl-0">
+        <li class="breadcrumb-item"><a href="productDesc.html" class="text-primary">Cart</a></li>
+        <li class="breadcrumb-item" aria-current="page"><span class="font-weight-bold">Information</span></li>
+        <li class="breadcrumb-item" class="text-gray-light">Payment</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+<div class="row">
+  <div class="col col-md-6">
+    <div class="dropdown d-md-none d-flex justify-content-between align-items-center bg-gray-light rounded p-3" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+      <span>Order Summary</span>
+      <div class="d-flex align-items-center">
+        <p class="font-weight-bold text-secondary mr-2">NT$4,760</p>
+        <i class="material-icons dropdown-btn text-primary">expand_more</i>
+      </div>
+    </div>
+    <!-- 手機板下拉購物選單 -->
+    <div class="collapse" id="collapseExample">
+      <div class="card border-0 bg-gray-light">
+        <div class="card-body">
+          <ul class="border-bottom mb-3">
+            <li class="d-flex mb-2">
+              <img src="assets/images/img-1.jpg" class="customerContent-img mr-3" alt="...">
+              <div class="d-flex justify-content-between py-3 w-100">
+                <h2 class="font-weight-bold">Tatami Cup <span class="font-weight-normal">×1</span></h2>
+                <p>NT$1,080</p>
+              </div>
+            </li>
+            <li class="d-flex pb-2">
+              <img src="assets/images/img-4.jpg" class="customerContent-img mr-3" alt="...">
+              <div class="d-flex justify-content-between py-3 w-100">
+                <h2 class="font-weight-bold">Baifan Bowl<span class="font-weight-normal">×2</span></h2>
+                <p>NT$3,600</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="mb-3">
+            <li class="d-flex justify-content-between mb-2">
+              <p>Subtotal</p>
+              <span>NT$4,680</span>
+            </li>
+            <li class="d-flex justify-content-between border-bottom mb-3 pb-3">
+              <p>Shipping</p>
+              <span>NT$80</span>
+            </li>
+            <li class="d-flex justify-content-between">
+              <p class="font-size-m font-weight-bold">Total</p>
+              <span class="font-size-m font-weight-bold">NT$4,760</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 麵包屑 -->
+    <nav aria-label="breadcrumb" class="customerInfocrumb d-md-none mt-4">
+      <ol class="customerInfocrumb breadcrumb bg-transparent pl-0">
+        <li class="breadcrumb-item"><a href="#" class="text-primary">Cart</a></li>
+        <li class="breadcrumb-item"><a href="#" class="font-weight-bold">Information</a></li>
+        <li class="breadcrumb-item" aria-current="page" class="text-gray-light">Payment</li>
+      </ol>
+    </nav>
+
+    <form class="mb-4"> 
+      <div class="form-group">
+        <h2 class="font-size-s mb-2">Contact information</h2>
+        <input type="email" class="form-control py-4" id="exampleInputPassword1" placeholder="Email">
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+        <label class="form-check-label text-secondary-dark font-size-sm" for="exampleCheck1">Keep me up to date on news and special offerst</label>
+      </div>
+      <div class="form-group">
+        <h2 class="font-size-s mb-2">Shipping address</h2>
+        <div class="d-flex flex-column">
+          <div class="d-md-flex">
+            <input type="text" class="form-control py-4 mb-2 mr-2" id="exampleInputPassword1" placeholder="Name">
+            <input type="tel" class="form-control py-4 mb-2" id="exampleInputPassword1" placeholder="Phone">
+          </div>
+          <div class="d-md-flex">
+            <select class="form-control mb-2 mr-2" id="exampleFormControlSelect1">
+              <option class="text-secondary-dark">Country/Region</option>
+              <option class="text-secondary-dark">Taiwan</option>
+              <option class="text-secondary-dark">Japan</option>
+              <option class="text-secondary-dark">Korea</option>
+            </select>
+            <select class="form-control mb-2" id="exampleFormControlSelect1">
+              <option class="text-secondary-dark">City</option>
+              <option class="text-secondary-dark">Taipei</option>
+              <option class="text-secondary-dark">NewTaiwan</option>
+            </select>
+          </div>
+          <input type="text" class="form-control py-4" id="exampleInputPassword1" placeholder="Address">
+        </div>
+      </div>
+    </form>
+
+    <div class="d-md-flex justify-content-between align-items-center">
+      <a class="btn btn-primary font-weight-bold btn-block py-3 mb-4 w-md-50 order-md-2" href="payment.html" role="button">Continue to payment</a>
+      <a class="d-flex justify-content-center align-items-center pb-4" href="productDesc.html">
+        <i class="material-icons text-primary mr-1">navigate_before</i>
+        <p class="text-primary">Return to cart</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="col-md-4 d-none d-md-block">
+    <div class="bg-gray-light p-5">
+      <ul class="border-bottom mb-3">
+        <li class="d-flex mb-2">
+          <img src="assets/images/img-1.jpg" class="customerContent-img mr-3" alt="...">
+          <div class="d-flex justify-content-between py-3 w-100">
+            <h2 class="font-weight-bold">Tatami Cup <span class="font-weight-normal">×1</span></h2>
+            <p>NT$1,080</p>
+          </div>
+        </li>
+        <li class="d-flex pb-2">
+          <img src="assets/images/img-4.jpg" class="customerContent-img mr-3" alt="...">
+          <div class="d-flex justify-content-between py-3 w-100">
+            <h2 class="font-weight-bold">Baifan Bowl<span class="font-weight-normal">×2</span></h2>
+            <p>NT$3,600</p>
+          </div>
+        </li>
+      </ul>
+      <ul class="mb-3">
+        <li class="d-flex justify-content-between mb-2">
+          <p>Subtotal</p>
+          <span>NT$4,680</span>
+        </li>
+        <li class="d-flex justify-content-between border-bottom mb-3 pb-3">
+          <p>Shipping</p>
+          <span>NT$80</span>
+        </li>
+        <li class="d-flex justify-content-between">
+          <p class="font-size-m font-weight-bold">Total</p>
+          <span class="font-size-m font-weight-bold">NT$4,760</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div> 
+
+

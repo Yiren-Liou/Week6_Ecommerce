@@ -1,0 +1,232 @@
+---
+title:  _Product-Tatami Cup
+layout: ./app/layout-pages.ejs
+engine: ejs
+current: productDesc
+---
+
+<div class="container mb-6 mb-md-7">
+  <div class="row flex-column flex-md-row mb-4 mb-md-6 align-items-md-center">
+    <div class="col-md-8 col">
+      <div class="productImg bg-cover bg-center mr-md-0 ml-md-0">
+        <span class="font-size-sm font-weight-bold text-white position-absolute">On Sale</span>
+      </div>
+    </div>
+    <div class="col-md-4 ">
+      <div class="productInfo bg-white p-3 mt-md-0 border">
+        <nav aria-label="breadcrumb mb-2">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item"><a href="index.html" class="text-secondary">Home</a></li>
+            <li class="breadcrumb-item"><a href="product.html" class="text-secondary">Product</a></li>
+            <li class="breadcrumb-item text-primary" aria-current="page">Cup</li>
+          </ol>
+        </nav>
+        <h2 class="font-size-ml font-weight-bold mb-3">Tatami Cup</h2>
+        <div class="productPrice d-flex flex-wrap align-items-center justify-content-between">
+          <div class="bg-gray-light rounded w-50 p-3 d-flex align-items-center justify-content-between mb-3 order-md-2 w-md-35 mb-md-0 mr-md-2">
+            <a href="">
+              <i class="material-icons text-secondary">remove</i>
+            </a>
+            <span class="text-secondary">1</span>
+            <a href="">
+              <i class="material-icons text-secondary">add</i>
+            </a>
+          </div>
+          <div class="text-right w-50 w-md-100 order-md-1">
+            <span class="text-line-through text-secondary-light mb-1">NT$1,200</span>
+            <p class="font-size-m font-weight-bold">NT$1,080</p>
+          </div>
+          <button class="shopCartOpen btn btn-primary font-weight-bold btn-block py-3 w-100 w-md-60 order-md-3" href="#" role="button">Add to cart</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="row d-md-flex">
+    <div class="col-md-5">
+      <p class="font-size-md-s text-secondary mb-3">This beautiful light grey cup comes from Taiwan. Add some minimalist scenes to your lifetime and use this cup for tea, coffee, dessert, or to place small items as a dish tray.</p>
+    </div>
+    <div class="col-md-3">
+      <span class="font-size-sm text-secondary-dark">
+        Made in Taiwan<br>8 x 8 x 6 cm<br>Dishwasher and Microwave-safe
+      </span>
+    </div>
+  </div>
+</div>
+<!-- 加入購物車 -->
+<div class="shopCart bg-white position-absolute px-md-6 pt-md-5 w-md-40">
+  <div class="container">
+    <div class="d-flex justify-content-between py-3">
+        <h3 class="font-size-m font-size-md-lg font-weight-bold text-secondary">Cart List <sup class="text-primary">3</sup></h3>
+        <a href="" class="shopCartClose mt-1">
+          <i class="material-icons text-secondary font-size-md-lg">close</i>
+        </a>
+    </div>
+    <!-- 購物車項目 -->
+    <ul class="mb-4">
+      <li class="d-flex mb-2">
+        <img src="assets/images/img-1.jpg" class="w-30" alt="...">
+        <div class="d-flex flex-column justify-content-center bg-gray-light p-2 w-70">
+          <div class="d-flex justify-content-between">
+            <h2 class="font-weight-bold mb-1">Tatami Cup</h2>
+            <a href="" class="productDelete">
+              <i class="material-icons font-size-sm font-size-md-m text-secondary">close</i>
+            </a>
+          </div>
+          <p class="font-size-sm font-weight-bold text-secondary-dark mb-3">NT$1,080
+            <span class="text-line-through text-secondary-light ml-2 mb-1">NT$1,200</span>
+          </p>
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="">
+                <i class="material-icons text-secondary">remove</i>
+              </a>
+              <span class="text-secondary mx-4">1</span>
+              <a href="">
+                <i class="material-icons text-secondary">add</i>
+              </a>
+            </div>
+            <p class="font-weight-bold text-secondary">NT$1,080</p>
+          </div>
+        </div>
+      </li>
+      <li class="d-flex">
+        <img src="assets/images/img-4.jpg" class="w-30" alt="...">
+        <div class="d-flex flex-column justify-content-center bg-gray-light p-2 w-70">
+          <div class="d-flex justify-content-between">
+            <h2 class="font-weight-bold mb-1">Baifan Bowl</h2>
+            <a href="" class="productDelete">
+              <i class="material-icons font-size-sm font-size-md-m text-secondary">close</i>
+            </a>
+          </div>
+          <p class="font-size-sm font-weight-bold text-secondary-dark mb-3">NT$1,800</p>
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="">
+                <i class="material-icons text-secondary">remove</i>
+              </a>
+              <span class="text-secondary mx-4">2</span>
+              <a href="">
+                <i class="material-icons text-secondary">add</i>
+              </a>
+            </div>
+            <p class="font-weight-bold text-secondary">NT$3,600</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <!-- 購物車金額 -->
+    <div class="CartPrice">
+      <ul class="list-unstyled">
+        <li class="d-flex justify-content-between mb-3">
+          <p class="text-secondary-dark">Subtotal</p>
+          <span class="text-secondary-dark">NT$4,680</span>
+        </li>
+        <li class="d-flex justify-content-between mb-4">
+          <p class="text-secondary-dark">Shipping</p>
+          <span class="text-secondary-dark">NT$80</span>
+        </li>
+        <li class="d-flex justify-content-between">
+          <p class="font-size-m font-weight-bold text-secondary">Total</p>
+          <span class="font-size-m font-weight-bold text-secondary">NT$4,760</span>
+        </li>
+      </ul>
+      <a class="btn btn-primary font-weight-bold btn-block py-3 w-100" href="CustomerInfo.html" role="button">Checkout</a>
+    </div>
+  </div>
+</div>
+
+<!-- swiper -->
+<section class="container mb-6">
+  <h3 class="font-size-ml font-weight-bold mb-3 mb-md-4">You might also like…</h3>
+  <div class="swiper-container pb-6">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <a class="card border-0">
+          <img src="assets/images/img-4.jpg" alt=""class="card-img bg-cover rounded w-100 mb-2"/>
+          <div class="card-body p-0">
+            <h3 class="font-size-m font-weight-bold text-secondary mb-1">Baifan Bowl</h3>
+            <p class="text-secondary">NT$1,800 <span class="text-line-through text-secondary-light ml-2">NT$1,980</span></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a class="card border-0">
+          <img src="assets/images/img-8.jpg" alt=""class="card-img bg-cover rounded w-100 mb-2"/>
+          <div class="card-body p-0">
+            <h3 class="font-size-m font-weight-bold text-secondary mb-1">Kabi Mug</h3>
+            <p class="text-secondary">NT$980</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a class="card border-0">
+          <img src="assets/images/img-6.jpg" alt=""class="card-img bg-cover rounded w-100 mb-2"/>
+          <div class="card-body p-0">
+            <h3 class="font-size-m font-weight-bold text-secondary mb-1">Limdae Cup</h3>
+            <p class="text-secondary">NT$2,400</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a class="card border-0">
+          <img src="assets/images/img-2.jpg" alt=""class="card-img bg-cover rounded w-100 mb-2"/>
+          <div class="card-body p-0">
+            <h3 class="font-size-m font-weight-bold text-secondary mb-1">Couple Collection</h3>
+            <p class="text-secondary">NT$2,800</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a class="card border-0">
+          <img src="assets/images/img-1.jpg" alt=""class="card-img bg-cover rounded w-100 mb-2"/>
+          <div class="card-body p-0">
+            <h3 class="font-size-m font-weight-bold text-secondary mb-1">Tatami Cup</h3>
+            <p class="text-secondary">NT$1,080 <span class="text-line-through text-secondary-light ml-2">NT$1,200</span></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a class="card border-0">
+          <img src="assets/images/img-3.jpg" alt=""class="card-img bg-cover rounded w-100 mb-2"/>
+          <div class="card-body p-0">
+            <h3 class="font-size-m font-weight-bold text-secondary mb-1">Sumo Vase</h3>
+            <p class="text-secondary">NT$4,800</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a class="card border-0">
+          <img src="assets/images/img-5.jpg" alt=""class="card-img bg-cover rounded w-100 mb-2"/>
+          <div class="card-body p-0">
+            <h3 class="font-size-m font-weight-bold text-secondary mb-1">Hana Vase</h3>
+            <p class="text-secondary">NT$3,600 <span class="text-line-through text-secondary-light ml-2">NT$3,880</span></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a class="card border-0">
+          <img src="assets/images/img-7.jpg" alt=""class="card-img bg-cover rounded w-100 mb-2"/>
+          <div class="card-body p-0">
+            <h3 class="font-size-m font-weight-bold text-secondary mb-1">Ceramic Vase</h3>
+            <p class="text-secondary">NT$3,600</p>
+          </div>
+        </a>
+      </div>  
+    </div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Navigation -->
+    <div class="swiper-button-prev font-weight-bold text-primary d-none d-md-block"></div>
+    <div class="swiper-button-next font-weight-bold text-primary d-none d-md-block"></div>
+  </div>
+</section>

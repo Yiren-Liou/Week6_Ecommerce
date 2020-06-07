@@ -1,0 +1,24 @@
+.smMenu{
+  z-index: $zindex-dropdown;
+  bottom: 0;
+  top: 0;
+  transform: translateX(-800px);
+  transition: all 1.5s;
+}
+
+.smMenu.move{
+  transform: translateX(0px);
+  transition: all .8s;
+}
+
+.dropdown {
+  .dropdown-btn {
+    transform: rotate(0deg);
+    transition: all 0.5s;
+    &.active {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+
