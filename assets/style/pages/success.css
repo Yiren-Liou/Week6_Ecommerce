@@ -1,6 +1,8 @@
-.successBg{
+.successBg {
   background-image: url(../images/done.jpg);
-  top: 0; 
+  top: 0;
   bottom: 0;
   position: absolute;
 }
+
+/*# sourceMappingURL=success.css.map */
